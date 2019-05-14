@@ -1,0 +1,36 @@
+﻿1.설치
+	1.1 아나콘다 설치 https://www.anaconda.com/download/
+	1.2 아나콘다 실행 후 중요 모듈 설치
+	
+------중요 모듈 설치 명령어--------
+이미지 오픈 모듈 설치
+conda install Pillow
+pip install image
+
+데이터베이스 모듈 설치
+pip install psycopg2
+
+워드클라우드 모듈 설치
+pip install wordcloud
+
+pip install matplotlib
+
+배열 계산 모듈설치
+/경우에 따라서 설치가 불필요 
+pip install numpy
+
+------------------------------
+
+2.실행
+	2.1 아나콘다 실행 후 .py 디렉토리 경로에서 python ecobankWordcloud.py 명령어 입력
+
+python ecobankWordcloud.py "C:/eGovFrameDev-3.5.1-64bit/workspace/WordCloud/wordcloud_img" "C:/egovframework/temp/WordCloudImage/" "wordcloud" 3 "NanumGothic.ttf" "일간지" "bio" "CNN" "20190124"
+
+python C:\Users\seo\Desktop\통합\WordCloud\ecobankWordcloud.py "wordcloud_img" "C:/egovframework/temp/WordCloudImage/" "wordcloud7" 7 "NanumGothic.ttf" "뉴스" "bio" "CNN" "20190124" "" ""
+
+
+파라미터 변경 적용!
+python ecobankWordcloud.py "wordcloud_img"  "C:/egovframework/temp/WordCloudImage/" "wordcloud" 3 "NanumGothic.ttf" "논문" "bio" "JKSL" "20190124" "20190124" "ss"
+
+
+python ecobankWordcloud.py "wordcloud_img"  "C:/egovframework/temp/WordCloudImage/" "wordcloud" 3 "NanumGothic.ttf" "논문" "bio" "JKSL" "all" "all" "all"
