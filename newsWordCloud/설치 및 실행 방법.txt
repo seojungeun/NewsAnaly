@@ -24,13 +24,13 @@ pip install numpy
 2.실행
 	2.1 아나콘다 실행 후 .py 디렉토리 경로에서 python ecobankWordcloud.py 명령어 입력
 
-python ecobankWordcloud.py "C:/eGovFrameDev-3.5.1-64bit/workspace/WordCloud/wordcloud_img" "C:/egovframework/temp/WordCloudImage/" "wordcloud" 3 "NanumGothic.ttf" "일간지" "bio" "CNN" "20190124"
+python file_name.py.py "C:/eGovFrameDev-3.5.1-64bit/workspace/WordCloud/wordcloud_img" "C:/egovframework/temp/WordCloudImage/" "wordcloud" 3 "NanumGothic.ttf" "일간지" "bio" "CNN" "20190124"
 
-python C:\Users\seo\Desktop\통합\WordCloud\ecobankWordcloud.py "wordcloud_img" "C:/egovframework/temp/WordCloudImage/" "wordcloud7" 7 "NanumGothic.ttf" "뉴스" "bio" "CNN" "20190124" "" ""
+python C:\Users\seo\Desktop\통합\WordCloud\file_name.py.py "wordcloud_img" "C:/egovframework/temp/WordCloudImage/" "wordcloud7" 7 "NanumGothic.ttf" "뉴스" "bio" "CNN" "20190124" "" ""
 
 
 파라미터 변경 적용!
-python ecobankWordcloud.py "wordcloud_img"  "C:/egovframework/temp/WordCloudImage/" "wordcloud" 3 "NanumGothic.ttf" "논문" "bio" "JKSL" "20190124" "20190124" "ss"
+python file_name.py.py "wordcloud_img"  "C:/egovframework/temp/WordCloudImage/" "wordcloud" 3 "NanumGothic.ttf" "논문" "bio" "JKSL" "20190124" "20190124" "ss"
 
 
-python ecobankWordcloud.py "wordcloud_img"  "C:/egovframework/temp/WordCloudImage/" "wordcloud" 3 "NanumGothic.ttf" "논문" "bio" "JKSL" "all" "all" "all"
+python file_name.py "wordcloud_img"  "C:/egovframework/temp/WordCloudImage/" "wordcloud" 3 "NanumGothic.ttf" "논문" "bio" "JKSL" "all" "all" "all"
