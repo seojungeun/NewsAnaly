@@ -29,7 +29,7 @@ def tblAnalyQuery(data_ty,dataClkwTtle,dataClorTtle,colctDe):
     #   Default port =1200
     
     #-your setting value=
-    conn_string = "host='121.160.17.80' dbname ='projectWordCLoud' user='dev' password='pro12345' port='12000'"
+    conn_string = "host='121.160.16.80' dbname ='seoDB' user='dev' password='ne12345' port='12000'"
     conn = psycopg2.connect(conn_string)
     curs = conn.cursor()
 
