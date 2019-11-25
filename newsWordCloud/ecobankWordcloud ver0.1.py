@@ -5,7 +5,7 @@ import config
 import numpy as np
 import psycopg2
 
-# °æ·Î¼³Á¤
+# ê²½ë¡œì„¤ì •
 from io import StringIO
 from os.path import isfile ,join
 from os import listdir
@@ -13,21 +13,23 @@ import os
 import re
 from PIL import Image
 
-# ¿öµå Å¬¶ó¿ìµå »ı¼º
+# ì›Œë“œ í´ë¼ìš°ë“œ ìƒì„±
 from wordcloud import WordCloud
 
-# Äõ¸®Á¶°Ç
-# data_ty= À¯Çü Äõ¸®, dataClkwTtle=´ë»ó,dataClorTtle= ÁÖ±â
+# ì¿¼ë¦¬ì¡°ê±´
+# data_ty= ìœ í˜• ì¿¼ë¦¬, dataClkwTtle=ëŒ€ìƒ,dataClorTtle= ì£¼ê¸°
 
 
-# Äõ¸®Á¶°Ç
-# data_ty= À¯Çü Äõ¸®, dataClkwTtle=´ë»ó,dataClorTtle= ÁÖ±â
+# ì¿¼ë¦¬ì¡°ê±´
+# data_ty= ìœ í˜• ì¿¼ë¦¬, dataClkwTtle=ëŒ€ìƒ,dataClorTtle= ì£¼ê¸°
 
 def tblAnalyQuery(data_ty,dataClkwTtle,dataClorTtle,colctDe):  
     keyword_query=[]
     comMa="'"
     #   Default port =1200
-    conn_string = "host='121.160.17.80' dbname ='EcoBank' user='dev' password='nie12345' port='12000'"
+    
+    #-your setting value=
+    conn_string = "host='121.160.17.80' dbname ='projectWordCLoud' user='dev' password='pro12345' port='12000'"
     conn = psycopg2.connect(conn_string)
     curs = conn.cursor()
 
@@ -62,9 +64,9 @@ def tblAnalyQuery(data_ty,dataClkwTtle,dataClorTtle,colctDe):
 	
 def maskSelect(infile):
     os.chdir(infile)
-    # ¸ğµç ÆÄÀÏÁ¤º¸
+    # ëª¨ë“  íŒŒì¼ì •ë³´
     files = [f for f in listdir(infile) if isfile(join(infile, f))]
-    # ¸¶½ºÅ© Á¤º¸
+    # ë§ˆìŠ¤í¬ ì •ë³´
     files = [x for x in files if x.find("png") != -1] 
     return files
     
